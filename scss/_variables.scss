@@ -14,3 +14,22 @@ $danger-active: #A11F0C;
 $success-active: #486824;
 $warning-active: #FAAF08;
 $white-active: #F1F1F2;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+  "dark": $dark,
+  "danger": $danger,
+  "success": $success,
+  "warning": $warning,
+  "white": $white,
+  "primary-active": $primary-active,
+  "secondary-active": $secondary-active,
+  "light-active": $light-active,
+  "dark-active": $dark-active,
+  "danger-active": $danger-active,
+  "success-active": $success-active,
+  "warning-active": $warning-active,
+  "white-active": $white-active,
+)

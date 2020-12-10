@@ -1,0 +1,25 @@
+.button {
+  border: 2px solid $dark;
+  box-sizing: border-box;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-align: center;
+  padding: 0.6em 1.5em;
+  margin: 0.5em;
+
+  @include colorButton('primary');
+  @include colorButton('secondary');
+  @include colorButton('light');
+  @include colorButton('dark');
+  @include colorButton('danger');
+  @include colorButton('success');
+  @include colorButton('warning');
+  @include colorButton('white');
+
+  &:disabled, &[disabled] {
+    opacity: 0.33;
+    cursor: not-allowed;
+  }
+
+}
