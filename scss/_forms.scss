@@ -76,10 +76,12 @@ label.form-label {
   border: 2px solid $secondary;
   border-radius: 0.5em;
   transition: all 0.5s;
+  cursor: pointer;
 
   & + label {
     position: relative;
     margin-left: 0.5em;
+    cursor: pointer;
   }
 
   &:hover {
@@ -94,7 +96,7 @@ label.form-label {
     outline: none;
   }
 
-  &:checked {
+  &:checked, &:checked:disabled {
     outline: none;
     border-color: $primary;
     box-shadow: 0px 0px 3px 3px rgba($primary-active, 0.3);
@@ -116,6 +118,70 @@ label.form-label {
       position: absolute;
       top: -0.1em;
       left: -1.3em;
+    }
+  }
+
+  &:disabled {
+    background: $white-active;
+    border-color: $secondary;
+    opacity: 0.33;
+    cursor: not-allowed;
+
+    & + label {
+      color: $primary;
+      opacity: 0.33;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.radio {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid $secondary;
+  border-radius: 50%;
+  transition: all 0.5s;
+
+  & + label {
+    position: relative;
+    margin-left: 0.5em;
+  }
+
+  &:hover {
+    border-color: $primary;
+
+    & + label {
+      color: $primary;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:checked, &:checked:disabled {
+    outline: none;
+    border-color: $white;
+    background: $primary;
+    box-shadow: 0px 0px 3px 3px rgba($primary-active, 0.3);
+
+    & + label {
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+
+  &:disabled {
+    background: $white-active;
+    border-color: $secondary;
+    opacity: 0.33;
+    cursor: not-allowed;
+
+    & + label {
+      color: $primary;
+      opacity: 0.33;
+      cursor: not-allowed;
     }
   }
 }
