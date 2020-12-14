@@ -9,61 +9,26 @@
 </head>
 <body>
   <h1>This page is to test Turtle UI library</h1>
-  <button class="button button-primary">BUTTON</button>
-  <button class="button button-primary" disabled>BUTTON</button>
-  <br>
-  <button class="button button-secondary">BUTTON</button>
-  <button class="button button-secondary" disabled>BUTTON</button>
-  <br>
-  <button class="button button-light">BUTTON</button>
-  <button class="button button-light" disabled>BUTTON</button>
-  <br>
-  <button class="button button-dark">BUTTON</button>
-  <button class="button button-dark" disabled>BUTTON</button>
-  <br>
-  <button class="button button-danger">BUTTON</button>
-  <button class="button button-danger" disabled>BUTTON</button>
-  <br>
-  <button class="button button-success">BUTTON</button>
-  <button class="button button-success" disabled>BUTTON</button>
-  <br>
-  <button class="button button-warning">BUTTON</button>
-  <button class="button button-warning" disabled>BUTTON</button>
-  <br>
-  <button class="button button-white">BUTTON</button>
-  <button class="button button-white" disabled>BUTTON</button>
   <form>
     <div>
       <label for="sample-text" class="form-label">Sample text</label>
-      <input type="text" name="sample-text" id="sample-text" class="input" required />
+      <input type="text" name="sample-text" id="sample-text" class="input" required>
     </div>
     <br>
-    <div>
-      <label for="sample-password" class="form-label">Sample password</label>
-      <input type="password" name="sample-password" id="sample-password" class="input" required />
+    <div class="checkbox-container">
+      <input type="checkbox" name="sample-checkbox" id="sample-checkbox" class="checkbox" value="sample-1">
+      <label for="sample-checkbox">Sample checkbox</label>
     </div>
-    <br>
-    <div>
-      <label for="sample-number" class="form-label">Sample number</label>
-      <input type="number" name="sample-number" id="sample-number" class="input" required />
+    <div class="checkbox-container">
+      <input type="checkbox" name="sample-checkbox-2" id="sample-checkbox-2" class="checkbox" value="sample-2">
+      <label for="sample-checkbox-2">Sample checkbox 2</label>
     </div>
-    <div>
-      <label for="sample-search" class="form-label">Sample search</label>
-      <input type="search" name="sample-search" id="sample-search" class="input" />
+    <div class="checkbox-container">
+      <input type="checkbox" name="sample-checkbox-3" id="sample-checkbox-3" class="checkbox" value="sample-3">
+      <label for="sample-checkbox-3">Sample checkbox 3</label>
     </div>
-    <div>
-      <label for="sample-phone" class="form-label">Sample phone</label>
-      <input type="phone" name="sample-phone" id="sample-phone" class="input" />
-    </div>
-    <div>
-      <label for="sample-email" class="form-label">Sample email</label>
-      <input type="email" name="sample-email" id="sample-email" class="input" />
-    </div>
-    <div>
-      <label for="sample-textarea" class="form-label">Sample textarea</label>
-      <textarea name="sample-textarea" id="sample-textarea" cols="30" rows="10" class="input"></textarea>
-    </div>
-    <button type="submit">Submit</button>
+    <button type="submit" class="button button-primary">Submit</button>
+    <input type="reset" class="button button-danger" value="Cancel">
   </form>
   <script type="module" src="./js/turtle.js"></script>
 </body>
