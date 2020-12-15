@@ -9,40 +9,46 @@
 </head>
 <body>
   <h1>This page is to test Turtle UI library</h1>
-  <form>
-    <div>
-      <label for="sample-text" class="form-label">Sample text</label>
-      <input type="text" name="sample-text" id="sample-text" class="input" required>
+  <div class="card">
+    <div class="card-header">
+      <div class="card-header-content">
+        <div class="card-title">Title</div>
+        <div class="card-subtitle">Subtitle</div>
+      </div>
+      <div class="card-header-action">
+        <button class="button button-white">Main Action</button> 
+      </div>
     </div>
-    <br>
-    <div class="checkbox-container">
-      <input type="checkbox" name="sample-checkbox" id="sample-checkbox" class="checkbox" value="sample-1">
-      <label for="sample-checkbox">Sample checkbox</label>
+    <div class="card-content">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quas vel vitae eos nostrum iste, quis laudantium! Rem, suscipit sequi itaque at delectus voluptatem blanditiis illo ullam. Nam, maiores. Non.
     </div>
-    <div class="checkbox-container">
-      <input type="checkbox" name="sample-checkbox-2" id="sample-checkbox-2" class="checkbox" value="sample-2">
-      <label for="sample-checkbox-2">Sample checkbox 2</label>
+    <div class="card-media">
+      <img src="https://www.teahub.io/photos/full/170-1704690_s13-wallpaper-nissan-silvia-s13-jdm.jpg" alt="dummy-image">
     </div>
-    <div class="checkbox-container">
-      <input type="checkbox" name="sample-checkbox-3" id="sample-checkbox-3" class="checkbox" value="sample-3" checked disabled>
-      <label for="sample-checkbox-3">Sample checkbox 3</label>
+    <div class="card-actions">
+      <button class="button button-white card-action">Action 1</button>
+      <button class="button button-white card-action">Action 2</button>
+      <button class="button button-white card-action">Action 3</button>
+      <button class="button button-white card-action">Action 4</button>
     </div>
-
-    <div class="checkbox-container">
-      <input type="radio" name="sample-radio" id="sample-radio" class="radio" value="sample-1">
-      <label for="sample-radio">Sample radio</label>
+    <div class="card-footer">
+      <div class="card">
+        <div class="card-content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quas vel vitae eos nostrum iste, quis laudantium! Rem, suscipit sequi itaque at delectus voluptatem blanditiis illo ullam. Nam, maiores. Non.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quas vel vitae eos nostrum iste, quis laudantium! Rem, suscipit sequi itaque at delectus voluptatem blanditiis illo ullam. Nam, maiores. Non.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quas vel vitae eos nostrum iste, quis laudantium! Rem, suscipit sequi itaque at delectus voluptatem blanditiis illo ullam. Nam, maiores. Non.
+        </div>
+      </div>
     </div>
-    <div class="checkbox-container">
-      <input type="radio" name="sample-radio" id="sample-radio-2" class="radio" value="sample-2">
-      <label for="sample-radio-2">Sample radio 2</label>
-    </div>
-    <div class="checkbox-container">
-      <input type="radio" name="sample-radio" id="sample-radio-3" class="radio" value="sample-3" checked disabled>
-      <label for="sample-radio-3">Sample radio 3</label>
-    </div>
-    <button type="submit" class="button button-primary">Submit</button>
-    <input type="reset" class="button button-danger" value="Cancel">
-  </form>
+  </div>
   <script type="module" src="./js/turtle.js"></script>
 </body>
 </html>
