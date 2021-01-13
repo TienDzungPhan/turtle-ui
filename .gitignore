@@ -6,9 +6,3 @@ dist
 *.css.map
 *.sass.map
 *.scss.map
-<<<<<<< HEAD
-=======
-.vscode
-dist
-node_modules
->>>>>>> TUI9 Update gitignore with node_modules
